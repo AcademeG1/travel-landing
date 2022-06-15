@@ -34,8 +34,13 @@ html {
     box-sizing: inherit;  /* наследует от родителя */
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 body {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
@@ -99,6 +104,7 @@ body {
     background: url("../img/intro-bg.jpg") no-repeat center;
     background-size: cover;
     padding-top: 263px;
+    padding-bottom: 323px;
 }
 
 .intro-title {
@@ -117,6 +123,10 @@ body {
     line-height: 24px;
     max-width: 546px;
     margin-bottom: 59px;
+}
+
+.search-form {
+    /*margin-bottom: 153px;*/
 }
 
 .search-form-info {
@@ -159,3 +169,91 @@ body {
 }
 
 /* intro style stop */
+
+/* benefits style start */
+
+.benefits {
+    margin-bottom: 131px;
+}
+
+.benefits-wrap {
+    max-width: 1262px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 2px 20px rgba(21, 24, 36, 0.15993);
+    position: relative;
+}
+
+.benefits-title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #102746;
+    padding: 93px 100px 88px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: white;
+}
+
+.benefits-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 100px;
+
+}
+
+.benefits-card {
+    max-width: 317px;
+    margin-bottom: 112px;
+}
+
+.benefits-card-pic {
+    margin-bottom: 37px;
+}
+
+.benefits-card-img {
+    display: block;
+    width: 66px;
+}
+
+.benefits-cards-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.benefits-card-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 39px;
+}
+
+.benefits-card-more {
+    display: inline-block;
+    padding-right: 59px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    background: url("../img/svg/strelka.svg") no-repeat 95% center;
+    transition: .2s all;
+}
+
+.benefits-card-more:hover, .benefits-card-more:active, .benefits-card-more:focus {
+    background: url("../img/svg/strelka.svg") no-repeat right center;
+}
+
+/* benefits style end */
+
+/* places style start */
+
+/* places style end */
