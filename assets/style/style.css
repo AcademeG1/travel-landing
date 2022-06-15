@@ -25,3 +25,78 @@
     url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;  /* наследует от родителя */
+}
+
+body {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+}
+
+.wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+/* header style start */
+
+.header {
+    /*background-color: black;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-item {
+    margin-right: 82px;
+}
+/*Обнуление отступа у последнего элемента*/
+.header-item:last-child {
+    margin-right: 0;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header-link:hover, .header-link:focus, .header-link:active {
+    opacity: .75;
+    /*color: silver;*/
+}
+
+/* header style stop */
+
+/* intro style start */
+.intro {
+    height: 100vh;
+    background: url("../img/intro-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+/* intro style stop */
